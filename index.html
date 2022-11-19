@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    body {
+        /* margin: 0px;
+        padding: 0px; */
+        background-image: url("img/book4.jpg");
+        background-size: cover;
+
+    }
+    .right{
+position: absolute;
+right:34px;
+top:20px;
+display: inline block;
+
+}
+    input {
+        width: 690px;
+    }
+    #startDate,#startTime {
+    width: 50%;  
+    float: left;
+    
+    
+}
+
+    .container {
+         margin-top: 20px;
+        border: 1px solid orange;
+        border-radius: 8px;
+        padding: 2px;
+        width: 700px;
+        height: 400px;
+        margin-inline: 300px;
+        
+
+
+    }
+   
+    
+
+    .btn{
+        width: 700px;
+        height: 30px;
+        border-color: orange;
+        
+    }
+   
+ 
+</style>
+
+<body>
+    
+    <div class="container">
+
+        <h1 style="color:orange;margin:10px;text-align:center">Book a call</h1>
+        <h5 style="margin:10px;text-align:center">book a call slot and our representative will call you within 1 hour of selected time</h5>
+        <hr>
+       
+        <form action="https://formspree.io/f/xwkzzvjj" method="POST">
+            <div class="formgroup">
+                <label for="client name">Name:</label>
+                <br>
+                <input type="name" id="name" name="name">
+            </div>
+            <br>
+            <div class="formgroup">
+                <label for="EMAIL ADDRESS">Email:</label>
+                <br>
+                <input type="email" id="mail" name="email">
+            </div>
+            <br>
+            <div class="formgroup">
+                <label for="phone">Phone:</label>
+                <br>
+                <input type="phone" id="phone" name="phone">
+            </div>
+            <br>
+            
+            <label for="time">Time for Call:</label>
+            <br>
+            <div><input type="datetime-local" id="time"  name="time"></div>
+            <!-- <div><input type="time" id="time" required style="width: 350px;"></div> -->
+<!--  -->
+<!-- <div class="form-group" >
+    Date Picker
+        <div class="input-group date " id="startDate" >
+            <input type='date' class="form-control" style="width: 340px"/>
+            <span class="input-group-addon">
+                <span class="glyphicon glyphicon-calendar"></span> 
+            </span>
+        </div>
+    Time Picker
+         <div class="input-group date" id="startTime" >
+                <input type='time' class="form-control" style="width: 345px" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-time" ></span>
+                </span>
+        </div>
+    </div>
+    <br> --> 
+            <br>
+            <button class="btn" style="background-color:orangered;" value="Get A call">GET A CALL</button>
+
+        </form>
+      
+    </div>
+    
+        <!-- <div class="right">
+            
+            <button > Call Us Now</button>
+            <button>Email Now</button>
+            </div>
+         -->
+        
+     
+<!--   
+    <script>
+        function registeruser() {
+            const name = document.getElementById("name").value;
+            console.log(name)
+            const email = document.getElementById("mail").value;
+            console.log(email)
+            const phone = document.getElementById("phone").value;
+            console.log(phone)
+            const time = document.getElementById("time").value;
+            console.log(time)
+        }
+    </script> -->
+
+
+
+
+
+
+</body>
+</html>
